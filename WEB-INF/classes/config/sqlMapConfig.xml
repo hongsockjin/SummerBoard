@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMapConfig      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<!--sqlMapConfig>
+	<settings useStatementNamespaces="true"	/>
+	<transactionManager type="JDBC" commitRequired="false">
+		<dataSource type="SIMPLE">
+			<property name="JDBC.Driver"
+				value="oracle.jdbc.OracleDriver" />
+			<property name="JDBC.ConnectionURL"
+				value="jdbc:oracle:thin:@192.168.37.38:1521:SCASM" />
+			<property name="JDBC.Username" value="test" />
+			<property name="JDBC.Password" value="test" />
+		</dataSource>
+	</transactionManager-->
+
+<sqlMapConfig>
+	<!--properties resource="db.properties" />
+	<settings lazyLoadingEnabled="false" useStatementNamespaces="true" enhancementEnabled="true"/>
+	<transactionManager type="JDBC" commitRequired="false">
+		<dataSource type="JNDI">
+			<property name="DataSource" value="java:comp/env/jndi/mw"/>
+		</dataSource>
+	</transactionManager-->
+
+	<settings
+			cacheModelsEnabled="true"
+			enhancementEnabled="true"
+			useStatementNamespaces="true"
+			lazyLoadingEnabled="true"
+			maxRequests="512"
+			maxSessions="128"
+			maxTransactions="32" />
+
+	<sqlMap resource="net/nice19/smboard/ibatis/member.xml" />
+	<sqlMap resource="net/nice19/smboard/ibatis/board.xml" />
+	<sqlMap resource="net/nice19/smboard/ibatis/login.xml" />
+</sqlMapConfig>

@@ -1,0 +1,5 @@
+lsnrctl start LISTENER_GCS (리스너 시작)
+sqlplus / as sysdba (sys로 접속)
+SQL>startup (인스턴스 시작)
+SQL>shutdown immediate (인스턴스 종료)
+lsnrctl stop LISTENER_GCS (리스너 종료)
