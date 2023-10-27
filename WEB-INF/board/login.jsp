@@ -24,7 +24,7 @@
 				alert("비밀번호가 일치하지 않습니다!");
 				break;
 			case 3:
-				alert("회원가입 처리가 완료되었습니다! 로그인 해 주세요! _____jenkins 에서 내가 수정한 소스가 감지 되는 가용?......");
+				alert("회원가입 처리가 완료되었습니다! 로그인 해 주세요! _____jenkins 에서 내가 수정한 소스가 감지 되는 가용?......dsdsdsdsdsd");
 				location.href = "<%=request.getContextPath()%>/login.do";
 				break;		
 			}
