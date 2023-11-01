@@ -7,7 +7,7 @@
 		<font color=navy>
 			<% out.print("YeunSang&Gukhoi");%></font>
 			
-			<p> spring&ibatis!<p>
+			<p> spring&ibatis!  ____반영<p>
 				<i>weblogic10.3.6</i>
 			<p><font color=navy>
 		<%     for (int i = 1; i<=1; i++) {%>
